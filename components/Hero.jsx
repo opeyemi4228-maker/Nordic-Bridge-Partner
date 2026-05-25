@@ -3,8 +3,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
-import { AnimatedUnderlineWord } from "@/components/ui/animated-underline-text-one";
-import { CircleHighlight } from "@/components/ui/hand-writing-text";
 
 /**
  * Hero.jsx — Nordic Bridge Partners
@@ -100,20 +98,9 @@ export default function Hero({
             className="font-extrabold uppercase leading-[1.1] tracking-tight text-white"
             style={{ fontSize: "clamp(1.8rem, 10vw, 3.25rem)", textShadow: "0 2px 24px rgba(0,0,0,0.4)" }}
           >
-            <motion.span variants={lineItem} className="block">Bridging Opportunities</motion.span>
-            <motion.span variants={lineItem} className="block">
-              Between{" "}
-              <AnimatedUnderlineWord color="#0818A8" underlineColor="#ffffff" delay={0.6}>
-                Nordic
-              </AnimatedUnderlineWord>{" "}
-              &amp;
-            </motion.span>
-            <motion.span variants={lineItem} className="block">
-              <CircleHighlight color="#ffffff" circleColor="#0818A8" delay={1.0}>
-                African
-              </CircleHighlight>{" "}
-              Markets
-            </motion.span>
+            <motion.span variants={lineItem} className="block text-white">Bridging Opportunities</motion.span>
+            <motion.span variants={lineItem} className="block text-white">Between Nordic</motion.span>
+            <motion.span variants={lineItem} className="block text-white">African Markets</motion.span>
           </motion.h1>
 
           <motion.p
@@ -186,9 +173,9 @@ export default function Hero({
               className="text-right font-extrabold uppercase leading-[1.08] tracking-tight text-white"
               style={{ fontSize: "clamp(2.6rem, 4.5vw, 4.0rem)", textShadow: "0 2px 24px rgba(0,0,0,0.4)" }}
             >
-              <motion.span variants={lineItem} className="block">Bridging Opportunities</motion.span>
-              <motion.span variants={lineItem} className="block">Between Nordic &amp;</motion.span>
-              <motion.span variants={lineItem} className="block">African Markets</motion.span>
+              <motion.span variants={lineItem} className="block text-white">Bridging Opportunities</motion.span>
+              <motion.span variants={lineItem} className="block text-white">Between Nordic</motion.span>
+              <motion.span variants={lineItem} className="block text-white">African Markets</motion.span>
             </motion.h1>
 
             <motion.p
